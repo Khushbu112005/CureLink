@@ -1,0 +1,132 @@
+.patient-dashboard {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .patient-dashboard {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.dashboard-tabs {
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 1.5rem;
+}
+
+.tab-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 1rem 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tab-btn:hover {
+    color: var(--text-main);
+    border-color: var(--border-color);
+}
+
+.tab-btn.active {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.appointment-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.doctor-name {
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.doctor-spec {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.appt-time {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-main);
+}
+
+.status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.status-pending {
+    background-color: var(--warning-bg);
+    color: var(--warning-text);
+}
+
+.status-confirmed {
+    background-color: var(--success-bg);
+    color: var(--success-text);
+}
+
+.status-cancelled {
+    background-color: var(--error-bg);
+    color: var(--error-text);
+}
+
+.status-completed {
+    background-color: var(--info-bg);
+    color: var(--info-text);
+}
+
+.record-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.record-section {
+    margin-bottom: 0.5rem;
+}
+
+.record-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.sticky-sidebar {
+    position: sticky;
+    top: calc(var(--header-height) + 2rem);
+}
+
+.section-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

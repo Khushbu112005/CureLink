@@ -1,0 +1,74 @@
+/* Register page shares most styles with Login, importing them or redclaring logic */
+/* For stricter separation as requested, we duplicate the necessary classes to keep files independent */
+
+.register-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 2rem 1rem;
+}
+
+.register-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    width: 100%;
+    max-width: 500px;
+    /* Slightly wider for register */
+}
+
+/* Reusing classes defined in Login.css if loaded globally, or re-defining here */
+/* In a real scenario, we'd use a shared Auth.css, but task asked for separate */
+.auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.auth-logo {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.auth-title {
+    font-size: 1.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.auth-subtitle {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.auth-subtitle a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+}
+
+.auth-error {
+    background-color: var(--error-bg);
+    color: var(--error-text);
+    padding: 0.75rem;
+    border-radius: var(--radius-md);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.btn-full {
+    width: 100%;
+}
